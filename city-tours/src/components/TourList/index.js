@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
 import './TourList.scss';
+import Tour from '../Tour/Tour';
+import {tourData} from '../../data/tourData';
 
 export default class TourList extends Component {
+
+  state={
+    tours:tourData
+  }
+
   render() {
+    console.log(this.state.tours);
     return (
-      <section>
-        trinhadmasl
+      <section className="tourlist" >
+        <Tour/>
       </section>
     )
   }
 }
+// 1.11
